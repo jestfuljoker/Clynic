@@ -1,11 +1,8 @@
 import express from 'express';
 import routes from './routes';
+import './database';
 
 const app = express();
-
-app.get('/', (request, response) =>
-  response.json({ message: 'Hello Clynic!' }),
-);
 
 app.use(express.json());
 

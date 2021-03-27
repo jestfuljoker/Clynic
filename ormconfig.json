@@ -1,0 +1,14 @@
+{
+  "type": "postgres",
+	"host": "localhost",
+  "port": 5433,
+  "username": "postgres",
+  "password": 123456,
+  "database": "clynic",
+  "migrations": [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
+}
