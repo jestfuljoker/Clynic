@@ -1,6 +1,6 @@
 import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
-export default class CreateUsers1617313138451 implements MigrationInterface {
+export default class CreateUsers1601474273498 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(
       new Table({
@@ -10,25 +10,21 @@ export default class CreateUsers1617313138451 implements MigrationInterface {
             name: 'id',
             type: 'uuid',
             isPrimary: true,
+            generationStrategy: 'uuid',
+            default: 'uuid_generate_v4()',
+          },
+          {
+            name: 'name',
+            type: 'varchar',
           },
           {
             name: 'email',
             type: 'varchar',
-            isNullable: false,
             isUnique: true,
           },
           {
-            name: 'password_hash',
+            name: 'password',
             type: 'varchar',
-            isNullable: false,
-          },
-          {
-            name: 'profile_id',
-            type: 'uuid',
-          },
-          {
-            name: 'state_id',
-            type: 'uuid',
           },
           {
             name: 'created_at',
@@ -39,22 +35,6 @@ export default class CreateUsers1617313138451 implements MigrationInterface {
             name: 'updated_at',
             type: 'timestamp',
             default: 'now()',
-          },
-        ],
-        foreignKeys: [
-          {
-            name: 'fk_profiles',
-            referencedTableName: 'profiles',
-            referencedColumnNames: ['id'],
-            columnNames: ['profile_id'],
-            onUpdate: 'CASCADE',
-          },
-          {
-            name: 'fk_states',
-            referencedTableName: 'states',
-            referencedColumnNames: ['id'],
-            columnNames: ['state_id'],
-            onUpdate: 'CASCADE',
           },
         ],
       }),
