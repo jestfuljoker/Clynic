@@ -1,5 +1,8 @@
 node_modules
 
+tmp/*
+!tmp/.gitkeep
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
