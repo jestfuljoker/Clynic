@@ -16,11 +16,15 @@
     "@typescript-eslint"
   ],
   "rules": {
-    "no-console":"off",
-    "camelcase":"off",
-    "@typescript-eslint/no-unused-vars": ["error", {
-      "argsIgnorePattern": "_"
-    }],
+    "no-console": "off",
+    "camelcase": "off",
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "_"
+      }
+    ],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": [
       "error"
@@ -31,6 +35,14 @@
       "ignorePackages",
       {
         "ts": "never"
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "prefix": ["I"],
+        "format": ["PascalCase"]
       }
     ]
   },
