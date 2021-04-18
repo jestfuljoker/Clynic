@@ -1,4 +1,5 @@
 import { startOfHour } from 'date-fns';
+import { injectable, inject } from 'tsyringe';
 
 import Appointment from '@modules/appointments/infra/typeorm/entities/Appointment';
 import AppError from '@shared/Errors/AppError';
@@ -9,8 +10,10 @@ interface IRequest {
   provider_id: string;
 }
 
+injectable();
 class CreateAppointmentService {
   constructor(
+    @inject('AppointmentsRepository')
     private appointmentsRepository: IAppointmentsRepository,
   ) {}
 

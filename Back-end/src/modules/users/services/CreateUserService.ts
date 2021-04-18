@@ -1,4 +1,5 @@
 import { hash } from 'bcryptjs';
+import { inject, injectable } from 'tsyringe';
 
 import User from '@modules/users/infra/typeorm/entities/User';
 
@@ -11,8 +12,10 @@ interface IRequest {
   password: string;
 }
 
+@injectable()
 class CreateUserService {
   constructor(
+    @inject('UsersRepository')
     private usersRepository: IUsersRepository,
   ) {}
 
