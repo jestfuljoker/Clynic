@@ -42,8 +42,12 @@
       "error",
       {
         "selector": "interface",
-        "prefix": ["I"],
-        "format": ["PascalCase"]
+        "prefix": [
+          "I"
+        ],
+        "format": [
+          "PascalCase"
+        ]
       }
     ]
   },
