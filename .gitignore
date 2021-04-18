@@ -1,22 +1,52 @@
+.idea
+.DS_STORE
+.eslintcache
+*.swp
+*~
+/examples/*/node_modules/
+/examples/mongodb/globalConfig.json
+
+/e2e/*/node_modules
+/e2e/*/.pnp
+/e2e/*/.pnp.js
+!/e2e/presets/json/node_modules
+!/e2e/presets/js/node_modules
+/e2e/transform/*/coverage
+/e2e/transform/*/node_modules
+
 node_modules
 
-tmp/*
-!tmp/.gitkeep
+/packages/*/build/
+/packages/*/coverage/
+/packages/*/node_modules/
 
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
+/website/.docusaurus
+/website/build
+/website/backers.json
+/website/node_modules
+/website/yarn.lock
+/website/i18n/*
 
-### Node ###
-# Logs
-logs
-*.log
+/benchmarks/*/node_modules/
+
+/reports/*
+
+coverage
+lerna-debug.log
+npm-debug.log
 npm-debug.log*
-yarn-debug.log*
 yarn-error.log*
+junit.xml
+package-lock.json
 
-# Local History for Visual Studio Code
-.history/
+*.tsbuildinfo
+
+# https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored but nested for e2e directories
+**/.yarn/*
+!**/.yarn/releases
+!**/.yarn/plugins
+!**/.yarn/sdks
+!**/.yarn/versions
+**/.pnp.*
+
+crowdin-cli.jar
