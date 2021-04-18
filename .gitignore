@@ -50,3 +50,5 @@ package-lock.json
 **/.pnp.*
 
 crowdin-cli.jar
+
+REQUSO.md
