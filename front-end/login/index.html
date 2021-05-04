@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <script src="https://kit.fontawesome.com/6845730953.js" crossorigin="anonymous"></script>
+  <title>Login | Clynic</title>
+</head>
+
+<body class="body">
+  <div class="container">
+    <div class="content first-content">
+      <div class="first-column">
+        <h2 class="title title-primary">Bem vindo de volta!</h2>
+        <p class="description description-primary">Para manter-se conectado</p>
+        <p class="description description-primary">Insira as informações da sua conta</p>
+        <button id="signin" class="btn btn-primary">ENTRAR</button>
+      </div>
+
+      <div class="second-column">
+        <h2 class="title title-secondary">Crie uma conta</h2>
+        <div class="icons">
+          <ul class="list-icons">
+            <a href="#" class="link-icon">
+              <li class="item-icon">
+                <i class="fas fa-clinic-medical"></i>
+              </li>
+            </a>
+            <a href="#" class="link-icon">
+              <li class="item-icon">
+                <i class="fas fa-heartbeat"></i>
+              </li>
+            </a>
+            <a href="#" class="link-icon">
+              <li class="item-icon">
+                <i class="fas fa-first-aid"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <p class="description description-secondary">Ou entre com seu email:</p>
+        <form id="first-content-form" class="form">
+
+          <label class="label-input" for="">
+            <i class="far fa-user icon-modifier"></i>
+            <input id="nome" type="text" required placeholder="Nome">
+          </label>
+
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon-modifier"></i>
+            <input id="email" type="email" required placeholder="Email">
+          </label>
+
+          <label class="label-input" for="">
+            <i class="fas fa-key icon-modifier"></i>
+            <input id="senha" type="password" required placeholder="Senha">
+          </label>
+
+          <button class="btn btn-secondary">CONECTE-SE</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="content second-content">
+      <div class="first-column">
+        <h2 class="title title-primary">Ainda não possui uma conta?</h2>
+        <p class="description description-primary">Entre com seus dados</p>
+        <p class="description description-primary">E encontre a clínica mais próxima.</p>
+        <button id="signup" class="btn btn-primary">CONECTE-SE</button>
+      </div>
+
+      <div class="second-column">
+        <div class="logo">
+          <img src="img/Logo.svg" alt="Logo clynic">
+        </div>
+        <div class="icons">
+          <ul class="list-icons">
+            <a href="#" class="link-icon">
+              <li class="item-icon">
+                <i class="fas fa-clinic-medical"></i>
+              </li>
+            </a>
+            <a href="#" class="link-icon">
+              <li class="item-icon">
+                <i class="fas fa-heartbeat"></i>
+              </li>
+            </a>
+            <a href="#" class="link-icon">
+              <li class="item-icon">
+                <i class="fas fa-first-aid"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <p class="description description-secondary">Ou entre com seu email:</p>
+        <form id="form-second-content" class="form">
+
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon-modifier"></i>
+            <input type="email" placeholder="Email">
+          </label>
+
+          <label class="label-input" for="">
+            <i class="fas fa-key icon-modifier"></i>
+            <input type="password" placeholder="Senha">
+          </label>
+          <a class="password" href="#">Esquece a sua senha?</a>
+          <button class="btn btn-secondary">ENTRAR</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="js/services/clienteService.js"></script>
+</body>
+
+</html>
