@@ -1,0 +1,329 @@
+ <!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Clynic - Encontre as melhores clínicas</title>
+</head>
+
+<body>
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo" src="img/logo.png" alt="Logo Clynic">
+                </a>
+                <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-info mr-4 dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user-friends pr-2"></i>Entrar / Cadastrar
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <p class="pl-2"><i class="fas fa-user-friends pr-2"></i>Pacientes</p>
+                            <a class="dropdown-item" href="#">Entrar</a>
+                            <a class="dropdown-item" href="#">Cadastrar</a>
+                            <div class="dropdown-divider"></div>
+                            <p class="pl-2 pr-1"><i class="fas fa-building pr-2"></i>Profissional da Saúde</p>
+                            <a class="dropdown-item" href="#">Entrar</a>
+                            <a class="dropdown-item" href="#">Cadastrar</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="pl-2 pr-2 a-drop"><i class="fas fa-question-circle pr-2"></i>Como
+                                funciona o Clynic</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <section class="main">
+            <div class="container">
+                <div class="title-banner col-md-6 text-center">
+                    <h2>Fácil, rápido e seguro</h2>
+                    <h1>Agende agora sua consulta</h1>
+                </div>
+                <div class="row rounded">
+                    <div class="col-lg-12">
+                        <div class="abas">
+                            <div class="tabs">
+                                <ul class="nav nav-tabs mt-3" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#presencial"
+                                            role="tab" aria-controls="presencial" aria-selected="true">Presencial</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#online" role="tab"
+                                            aria-controls="online" aria-selected="false">Online (Por vídeo)</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="presencial" role="tabpanel"
+                                        aria-labelledby="presencial-tab">
+                                        <form>
+                                            <div class="form-row mt-4">
+                                                <div class="col-6">
+                                                    <label for="inputState" class="pl-1">O que gostaria de
+                                                        agendar?</label>
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>Selecione a especialidade</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="inputState" class="pl-1">Onde?</label>
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>Bairro ou Cidade</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <button id="buscar-presencial"
+                                                    class="main-btn btn-forms-pres align-self-end">Buscar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="online" role="tabpanel" aria-labelledby="online-tab">
+                                        <form>
+                                            <div class="form-row mt-4">
+                                                <div class="col-10">
+                                                    <label for="inputState" class="pl-1">O que gostaria de
+                                                        agendar?</label>
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>Selecione a especialidade</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <button id="buscar-online"
+                                                    class="main-btn btn-forms-pres align-self-end">Buscar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-banner pt-3 col-lg-10">
+                        <p>Com excelentes profissionais médicos, você pode continuar cuidando da sua saúde sem sair de
+                            casa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tipo-consultas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-5">
+                        <h2 class="font-weight-bold">Tudo o que você precisa tem aqui no Clynic</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 21rem;">
+                            <img src="img/card-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Consultas Presenciais</h5>
+                                <p class="card-text">
+                                    Agende suas consultas por especialidade e profissionais.</p><br>
+                                <a href="#" class="btn btn-info">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 21rem;">
+                            <img src="img/card-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Teleconsulta</h5>
+                                <p class="card-text">
+                                    Encontre os melhores especialistas para realizar uma consulta médica via chamada de
+                                    vídeo.</p>
+                                <a href="#" class="btn btn-info">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 21rem;">
+                            <img src="img/card-3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Clinícas especializadas</h5>
+                                <p class="card-text">
+                                    Encontre clínicas renomadas e confiáveis que oferecem o melhor atendimento.</p>
+                                <a href="#" class="btn btn-info">Pesquisar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="sessao-depoimentos" id="Depoimentos">
+            <div class="container">
+                <div class="text-center my-5">
+                    <h2>Depoimentos</h2>
+                    <h3>Saiba o que pacientes dizem sobre o Clynic</h3>
+                </div>
+                <div class="depoimentos">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card">
+                                <div class="img-fluid img-dep">
+                                    <img class="my-3" src="img/icon-dep1.png" alt="img depoimentos">
+                                </div>
+                                <div class="card-info px-4">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur soluta
+                                        doloremque tempore nisi placeat, eveniet voluptate recusandae. Eius, sapiente?
+                                    <p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="img-fluid img-dep">
+                                    <img class="my-3" src="img/icone-dep3.png" alt="imagem do projeto">
+                                </div>
+                                <div class="card-info px-4">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur soluta
+                                        doloremque tempore nisi placeat, eveniet voluptate recusandae. Eius, sapiente?
+                                    <p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="img-fluid img-dep">
+                                    <img class="my-3" src="img/icone-dep2.png" alt="imagem do projeto">
+                                </div>
+                                <div class="card-info px-4">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur soluta
+                                        doloremque tempore nisi placeat, eveniet voluptate recusandae. Eius, sapiente?
+                                    <p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="img-fluid img-dep">
+                                    <img class="my-3" src="img/icone-dep4.png" alt="imagem do projeto">
+                                </div>
+                                <div class="card-info px-4">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur soluta
+                                        doloremque tempore nisi placeat, eveniet voluptate recusandae. Eius, sapiente?
+                                    <p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="img-fluid img-dep">
+                                    <img class="my-3" src="img/icone-dep5.png" alt="imagem do projeto">
+                                </div>
+                                <div class="card-info px-4">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur soluta
+                                        doloremque tempore nisi placeat, eveniet voluptate recusandae. Eius, sapiente?
+                                    <p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <div class="img-fluid img-dep">
+                                    <img class="my-3" src="img/icone-dep6.png" alt="imagem do projeto">
+                                </div>
+                                <div class="card-info px-4">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur soluta
+                                        doloremque tempore nisi placeat, eveniet voluptate recusandae. Eius, sapiente?
+                                    <p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="para-clinicas" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-3 title-clinicas">
+                        <p>Para clínicas e consultórios</p>
+                        <h2 class="font-weight-bold">Faça parte de nossa plataforma</h2>
+                    </div>
+                    <div class="card-clinic d-flex">
+                        <div class="col-md-4">
+                            <div class="card" style="width: 15rem;">
+                                <img src="img/img-1.png" class="card-img-top m-auto pt-3" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold">Visibilidade</h5>
+                                    <p class="card-text">
+                                        Aumente o fluxo de pacientes de sua clínica ou consultório</p>
+                                    <a href="#" class="btn btn-info">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 15rem;">
+                                <img src="img/img-2.png" class="card-img-top m-auto pt-3" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold">Gestão para clínicas</h5>
+                                    <p class="card-text">
+                                        Gerencie processos, informações e pacientes.</p><br>
+                                    <a href="#" class="btn btn-info">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 15rem;">
+                                <img src="img/img-3.png" class="card-img-top m-auto pt-3" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title font-weight-bold">Telemedicina</h5>
+                                    <p class="card-text">
+                                        Atenda seus pacientes através de teleconsultas.</p><br>
+                                    <a href="#" class="btn btn-info">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/main.js"></script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

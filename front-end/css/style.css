@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+:root{
+    --azul-marinho: #38506C;
+    --azul-claro: #3FC1C9; 
+    --font-primary: 'Inter', sans-serif;
+}
+body{
+    font-family: var(--font-primary);
+    color: #202020;
+}
+.container{
+    padding-top: 70px;
+}
+.container-fluid {
+    padding: 0;
+}
+.row {
+    margin: 0;
+}
+/* Nav Menu */
+.navbar{
+   background-color: #F0F0F0 !important;
+}
+.navbar-brand img{
+    margin-left: 1rem;
+    height: 4.5rem;
+}
+.a-drop:hover{
+    text-decoration: none;
+    color: var(--azul-marinho); 
+}
+
+/* Banner */
+.main{
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 100%), url(../img/banner2.png) no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+.main .row{
+    position: absolute;
+    left: 3%;
+    top: 42%;
+    width: 50%;
+    height: 30%;
+    background-color: #AFE3E6;
+}
+.main .row .nav-tabs a{
+    color: #535353;
+}
+.title-banner h1{
+    color: #535353;
+}
+.title-banner h2{
+    font-size: 1.5rem;
+    color: var(--azul-marinho);
+}
+.p-banner{
+   margin-top: 4rem;
+   font-size: 1.2rem;
+   color: #2f2f2f;
+}
+.main-btn {
+    background-color: #FC5BB3;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+  }
+  
+.main-btn:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.9;
+    border-color: #b30765;
+}
+
+/* Consultas */
+#tipo-consultas h2{
+    color: var(--azul-marinho);
+}
+
+/* Depoimentos */
+
+#depoimentos{
+    height: 60vh;
+}
+#depoimentos h2{
+    color: var(--azul-marinho);
+}
+#depoimentos h3{
+    font-size: 1.4rem;
+}
+#depoimentos .card-dep{
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.img-dep{
+    width: 8rem;
+    margin: auto;
+}
+/* Para Clínicas */
+#para-clinicas{
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 80%), url(../img/banner-3.png) no-repeat center;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+#para-clinicas .row{
+    margin-top: 5rem;
+    margin-left: -6rem;
+}
+#para-clinicas img{
+    width: 5rem;
+}
+#para-clinicas .title-clinicas p{
+    font-size: 1.5rem;
+    color: #eee;
+}
+#para-clinicas .title-clinicas h2{
+    font-size: 2rem;
+    color: #21c1da;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+}
+
+
+
