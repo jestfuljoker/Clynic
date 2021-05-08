@@ -2,10 +2,11 @@
 
 # Features Pendentes
 
-- [ ] Recuperação de senha
-     - [ ] Recuperar senha através do email cadastrado;
-     - [ ] Email de recuperação de senha;
-     - [ ] Reset de senha;
+- [x] Recuperação de senha
+     - [x] Recuperar senha através do email cadastrado;
+     - [x] Email de recuperação de senha;
+     - [x] Reset de senha;
+     - [x] Testes de recuperação de senha.
      
 - [ ] Atualização do perfil
      - [ ] Alterar nome, email, senha;
@@ -17,8 +18,8 @@
 
 - [ ] Agendamento de serviços
      - [ ] Listar todos prestadores de serviços cadastrados;
-     - [ ] Listar os dias de um mês com pelo menos um horário disponivel de um prestador;
-     - [ ] Listar horários disponiveis em um dia especifico de um prestador;
+     - [ ] Listar os dias de um mês com pelo menos um horário disponível de um prestador;
+     - [ ] Listar horários disponíveis em um dia especifico de um prestador;
      - [ ] Realizar um novo agendamento com um prestador.
 
 - [x] Login e autenticação de usuário;
