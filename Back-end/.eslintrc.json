@@ -20,8 +20,9 @@
     "no-console": "off",
     "camelcase": "off",
     "no-useless-constructor": "off",
+    "no-unused-vars": "warn",
     "@typescript-eslint/no-unused-vars": [
-      "error",
+      "warn",
       {
         "argsIgnorePattern": "_"
       }
