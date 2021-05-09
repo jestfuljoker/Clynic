@@ -8,8 +8,8 @@
      - [x] Reset de senha;
      - [x] Testes de recuperação de senha.
      
-- [ ] Atualização do perfil
-     - [ ] Alterar nome, email, senha;
+- [x] Atualização do perfil
+     - [x] Alterar nome, email, senha;
 
 - [ ] Painel do prestador
      - [ ] Listar agendamentos de um dia específico;
