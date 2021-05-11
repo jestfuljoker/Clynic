@@ -60,12 +60,74 @@
     <main class="container-fluid">
         <section class="main">
             <div class="container">
-                <div class="row">
-                    <div class="pt-5 col-lg-6">
-                        <h1 class="title-banner">
-                            Agendamento de consulta médica online ou presencial sem sair de casa e com preços acessíveis.
-                        </h1>
-                        <p class="p-banner">Quero agendar uma consulta médica sem enrolação: <button id="btn-comecar" class="main-btn btn-forms-pres ml-3">Começar</button></p>
+                <div class="title-banner col-md-6 text-center">
+                    <h1>Agende agora sua consulta</h1>
+                    <h2>Fácil, rápido e seguro</h2>
+                </div>
+                <div class="row rounded">
+                    <div class="col-lg-12">
+                        <div class="abas">
+                            <div class="tabs">
+                                <ul class="nav nav-tabs mt-3" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#presencial"
+                                            role="tab" aria-controls="presencial" aria-selected="true">Presencial</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#online" role="tab"
+                                            aria-controls="online" aria-selected="false">Online (Por vídeo)</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="presencial" role="tabpanel"
+                                        aria-labelledby="presencial-tab">
+                                        <form>
+                                            <div class="form-row mt-4">
+                                                <div class="col-6">
+                                                    <label for="inputState" class="pl-1">O que gostaria de
+                                                        agendar?</label>
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>Selecione a especialidade</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="inputState" class="pl-1">Onde?</label>
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>Bairro ou Cidade</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <button id="buscar-presencial"
+                                                    class="main-btn btn-forms-pres align-self-end">Buscar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="tab-pane fade" id="online" role="tabpanel" aria-labelledby="online-tab">
+                                        <form>
+                                            <div class="form-row mt-4">
+                                                <div class="col-10">
+                                                    <label for="inputState" class="pl-1">O que gostaria de
+                                                        agendar?</label>
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>Selecione a especialidade</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <button id="buscar-online"
+                                                    class="main-btn btn-forms-pres align-self-end">Buscar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-banner pt-3 col-lg-10">
+                        <p>Com excelentes profissionais médicos, você pode continuar cuidando da sua saúde sem sair de
+                            casa.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -106,10 +168,8 @@
                             <div class="card-body">
                                 <h5 class="card-title font-weight-bold">Suporte</h5>
                                 <p class="card-text">
-                                    Surgiu dúvidas de como funciona o Clynic? Entre em contato conosco e iremos te
-                                    ajudar</p>
-                                <a href="https://api.whatsapp.com/send?phone=5511937744827" target="blank_"
-                                    class="btn btn-info">Contato</a>
+                                    Surgiu dúvidas de como funciona o Clynic? Entre em contato conosco e iremos te ajudar</p>
+                                <a href="https://api.whatsapp.com/send?phone=5511937744827" target="blank_" class="btn btn-info">Contato</a>
                             </div>
                         </div>
                     </div>
@@ -122,7 +182,7 @@
         <section class="sessao-depoimentos" id="Depoimentos">
             <div class="container">
                 <div class="text-center my-5">
-                    <h2 class="font-weight-bold">Depoimentos</h2>
+                    <h2>Depoimentos</h2>
                     <h3>Saiba o que pacientes dizem sobre o Clynic</h3>
                 </div>
                 <div class="depoimentos">
@@ -133,8 +193,7 @@
                                     <img class="my-3" src="img/icon-dep1.png" alt="img depoimentos">
                                 </div>
                                 <div class="card-info px-4">
-                                    <p>Detesto agendar consulta por telefone, foi a primeira vez que usei, achei de
-                                        fácil navegação e intuitivo, ate agora gostei bastante
+                                    <p>Detesto agendar consulta por telefone, foi a primeira vez que usei, achei de fácil navegação e intuitivo, ate agora gostei bastante
                                     <p>
                                 </div>
                             </div>
@@ -145,8 +204,7 @@
                                     <img class="my-3" src="img/icone-dep3.png" alt="imagem do projeto">
                                 </div>
                                 <div class="card-info px-4">
-                                    <p>Gosto muito! Me ajuda na correria do dia a dia, marco consulta até no metrô e
-                                        ainda com excelentes profissionais
+                                    <p>Gosto muito! Me ajuda na correria do dia a dia, marco consulta até no metrô e ainda com excelentes profissionais
                                     <p>
                                 </div>
                             </div>
@@ -157,8 +215,7 @@
                                     <img class="my-3" src="img/icone-dep2.png" alt="imagem do projeto">
                                 </div>
                                 <div class="card-info px-4">
-                                    <p>Me ajuda muito, só de não ter que ligar e poder checar o profissional, a
-                                        distância e os horários me ajudam bastante
+                                    <p>Me ajuda muito, só de não ter que ligar e poder checar o profissional, a distância e os horários me ajudam bastante
                                     <p>
                                 </div>
                             </div>
@@ -169,8 +226,7 @@
                                     <img class="my-3" src="img/icone-dep4.png" alt="imagem do projeto">
                                 </div>
                                 <div class="card-info px-4">
-                                    <p>Ótimo site, gostei muito, o método facilita o agendamento, não perde muito tempo
-                                        e não precisa ficar pendurado no telefone!
+                                    <p>Ótimo site, gostei muito, o método facilita o agendamento, não perde muito tempo e não precisa ficar pendurado no telefone!
                                     <p>
                                 </div>
                             </div>
@@ -181,8 +237,7 @@
                                     <img class="my-3" src="img/icone-dep5.png" alt="imagem do projeto">
                                 </div>
                                 <div class="card-info px-4">
-                                    <p>Ótimo site, gostei muito, o método facilita o agendamento, não perde muito tempo
-                                        e não precisa ficar pendurado no telefone
+                                    <p>Ótimo site, gostei muito, o método facilita o agendamento, não perde muito tempo e não precisa ficar pendurado no telefone
                                     <p>
                                 </div>
                             </div>
@@ -193,8 +248,7 @@
                                     <img class="my-3" src="img/icone-dep6.png" alt="imagem do projeto">
                                 </div>
                                 <div class="card-info px-4">
-                                    <p>Rápido e prático, diversos horários e opções de médicos! Perfeito pra quem quer
-                                        agilidade e não tem muita paciência
+                                    <p>Rápido e prático, diversos horários e opções de médicos! Perfeito pra quem quer agilidade e não tem muita paciência
                                     <p>
                                 </div>
                             </div>
@@ -214,32 +268,34 @@
                     <div class="card-clinic d-flex">
                         <div class="col-md-4">
                             <div class="card" style="width: 15rem;">
-                                <img src="img/img-1.png" class="card-img-top m-auto pt-5" alt="...">
+                                <img src="img/img-1.png" class="card-img-top m-auto pt-3" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title font-weight-bold">Visibilidade</h5>
                                     <p class="card-text">
-                                        Aumente o fluxo de pacientes de sua clínica  
-                                    </p><br>
+                                        Aumente o fluxo de pacientes de sua clínica ou consultório</p>
+                                    <a href="#" class="btn btn-info">Saiba mais</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card" style="width: 15rem;">
-                                <img src="img/img-2.png" class="card-img-top m-auto pt-5" alt="...">
+                                <img src="img/img-2.png" class="card-img-top m-auto pt-3" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title font-weight-bold">Gestão para clínicas</h5>
                                     <p class="card-text">
                                         Gerencie processos, informações e pacientes.</p><br>
+                                    <a href="#" class="btn btn-info">Saiba mais</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card" style="width: 15rem;">
-                                <img src="img/img-3.png" class="card-img-top m-auto pt-5" alt="...">
+                                <img src="img/img-3.png" class="card-img-top m-auto pt-3" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title font-weight-bold">Telemedicina</h5>
                                     <p class="card-text">
                                         Atenda seus pacientes através de teleconsultas.</p><br>
+                                    <a href="#" class="btn btn-info">Saiba mais</a>
                                 </div>
                             </div>
                         </div>
@@ -259,7 +315,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-
+                            
                         </div>
 
                     </div>
