@@ -39,44 +39,31 @@ body{
 
 /* Banner */
 .main{
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 100%), url(../img/banner2.png) no-repeat center;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 100%), url(../img/banner1.png) no-repeat center;
     width: 100%;
     background-size: cover;
     height: 100vh;
 }
-.main .row{
-    position: absolute;
-    left: 3%;
-    top: 42%;
-    width: 50%;
-    height: 30%;
-    background-color: #AFE3E6;
-}
-.main .row .nav-tabs a{
-    color: #535353;
-}
-.title-banner h1{
-    color: #535353;
-}
-.title-banner h2{
-    font-size: 1.5rem;
-    color: var(--azul-marinho);
+
+.title-banner{
+    color: #2f2f2f;
 }
 .p-banner{
-   margin-top: 4rem;
-   font-size: 1.2rem;
-   color: #2f2f2f;
+   margin-top: 3rem;
+   font-size: 1.5rem;
+   color: #535353;
 }
 .main-btn {
+    font-size: 1.2rem;
     background-color: #FC5BB3;
     color: #FFF;
     text-transform: uppercase;
-    width: 100px;
+    width: 200px;
     height: 50px;
     border-radius: 30px;
     border: 3px solid transparent;
     transition: .5s;
-  }
+}
   
 .main-btn:hover {
     text-decoration: none;
@@ -92,17 +79,11 @@ body{
 
 /* Depoimentos */
 
-#depoimentos{
-    height: 60vh;
-}
-#depoimentos h2{
+#Depoimentos h2{
     color: var(--azul-marinho);
 }
-#depoimentos h3{
+#Depoimentos h3{
     font-size: 1.4rem;
-}
-#depoimentos .card-dep{
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 .img-dep{
     width: 8rem;
@@ -131,6 +112,23 @@ body{
     color: #21c1da;
     text-shadow: 1px 1px 8px rgba(0,0,0,0.3);
 }
+
+/* Rodapé */
+.page-footer{
+    background: #147a8a;
+}
+#copy-area{
+    background-color: #fff;
+}  
+#copy-area .container {
+    padding: 10px 0;
+    text-align: center;
+}
+.weight{
+    font-weight: 600;
+}
+
+
 
 
 
