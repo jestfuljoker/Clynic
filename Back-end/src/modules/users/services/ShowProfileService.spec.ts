@@ -29,8 +29,10 @@ describe('UpdateProfile', () => {
   });
 
   it('should not be able to show the profile from non existing user', async () => {
-    expect(showProfile.execute({
-      user_id: 'non-existing-user',
-    })).rejects.toBeInstanceOf(AppError);
+    expect(
+      showProfile.execute({
+        user_id: 'non-existing-user',
+      }),
+    ).rejects.toBeInstanceOf(AppError);
   });
 });
