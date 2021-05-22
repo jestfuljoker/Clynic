@@ -1,7 +1,16 @@
 # Clynic 💉
 
-# Features Pendentes (Back-end)
+![GitHub repo size](https://img.shields.io/github/repo-size/Chriszao/Clynic?style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/Chriszao/Clynic?style=for-the-badge) ![GitHub forks](https://img.shields.io/github/forks/Chriszao/Clynic?style=for-the-badge)
 
+<!-- <img src="exemplo-image.png" alt="exemplo imagem">
+
+> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler. -->
+
+### Ajustes e melhorias
+
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+
+#### Back-end:
 - [x] Recuperação de senha
      - [x] Recuperar senha através do email cadastrado;
      - [x] Email de recuperação de senha;
@@ -28,11 +37,10 @@
 
 - [x] Criar tratativas de erros da aplicação.
 
-# Features Pendentes (Front-end)
+---
+#### Front-end:
 
-# Parte Externa
-
-## Área Inicial
+#### Área Inicial:
 
 - [X] Criação do banner;
      - [ ] Integrar a área de busca com o back-end;
@@ -49,17 +57,14 @@
 
 - [ ] Rodapé;
 
----------------------------------------
-
-## Área Inicial / Busca - Horários 
+#### Área Inicial / Busca - Horários 
 
 - [ ] Criação da área de agendamento Online;
 
 - [ ] Criação da área de agendamento Presencial;
 
-- [X] Área de Login; 
-# :white_check_mark: Tecnologias usadas
-
+- [X] Área de Login;
+---
 ### 🛠️ Tecnologias
 
 ### Back-end:
@@ -77,9 +82,70 @@
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS);
 - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript);
 - [Bootstrap 4](https://getbootstrap.com/docs/4.1/getting-started/introduction/).
+---
+## 🚀 Rodando Clynic
 
-### :pencil: Licença
+Para instalar o Clynic, siga estas etapas:
 
-Este projeto é desenvolvido sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para saber mais detalhes.
+```
+$ git clone
+$ yarn
+$ yarn dev (para o front-end)
+$ yarn dev:server (para o back-end)
+```
+<!-- 
+## ☕ Usando <nome_do_projeto>
+
+Para usar <nome_do_projeto>, siga estas etapas:
+
+```
+<exemplo_de_uso>
+``` -->
+<!-- 
+Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus! -->
+
+## 📫 Contribuindo para Clynic
+<!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
+Para contribuir com <strong>Clynic</strong>, siga estas etapas:
+
+1. Bifurque este repositório.
+2. Crie um branch: `git checkout -b <nome_branch>`.
+3. Faça suas alterações e confirme-as: `git commit -m '<mensagem_commit>'`
+4. Envie para o branch original: `git push origin <nome_do_projeto> / <local>`
+5. Crie a solicitação de pull.
+
+Como alternativa, consulte a documentação do GitHub em [como criar uma solicitação pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+## 🤝 Colaboradores
+
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Chriszao">
+        <img src="https://avatars3.githubusercontent.com/Chriszao" width="100px;" alt="Foto do Christofer Assis no GitHub"/><br>
+        <sub>
+          <b>Christofer Assis</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/mahcassi">
+        <img src="https://avatars.githubusercontent.com/u/72576725?v=4" width="100px;" alt="Foto de Maria Eduarda Cassiano"/><br>
+        <sub>
+          <b>Maria Eduarda</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+## 📝 Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
 <p align="center" style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">Projeto feito para disciplina de <strong> 📕 Projeto Orientado a Objetos 📗 </strong> curso <strong> Analise e desenvolvimento de sistemas</strong> - <strong> UMC </strong></p>
+
+
+[⬆ Voltar ao topo](#Clynic)<br>

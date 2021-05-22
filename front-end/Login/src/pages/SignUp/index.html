@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../styles/global.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Clynic | Entrar</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="background"></div>
+    <div class="content">
+      <img class="logo" src="../../assets/logo.svg" alt="Clynic logo">
+
+      <form onsubmit="handleSubmit()">
+        <h1>Faça seu cadastro</h1>
+
+        <label class="label-input" for="name">
+          <img src="../../assets/user.svg">
+          <input type="text" placeholder="Nome" id="name">
+        </label>
+
+        <label class="label-input" for="email">
+          <img src="../../assets/email.svg">
+          <input type="email" placeholder="E-mail" id="email">
+        </label>
+
+        <label class="label-input" for="password">
+          <img src="../../assets/password.svg">
+          <input type="password" placeholder="Senha" id="password">
+        </label>
+
+        <button type="submit">Cadastrar</button>
+
+      </form>
+
+      <a href="../SignIn/index.html">
+        <img class="login-arrow" src="../../assets/arrow-left.svg" alt="login arrow">
+        Voltar para logon
+      </a>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
