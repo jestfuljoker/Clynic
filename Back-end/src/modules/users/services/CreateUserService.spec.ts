@@ -12,10 +12,7 @@ describe('CreateUser', () => {
   beforeEach(() => {
     fakeUsersRepository = new FakeUserRepository();
     fakeHashProvider = new FakeHashProvider();
-    createUser = new CreateUserService(
-      fakeUsersRepository,
-      fakeHashProvider,
-    );
+    createUser = new CreateUserService(fakeUsersRepository, fakeHashProvider);
   });
 
   it('should be able to create a new user', async () => {

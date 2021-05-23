@@ -15,10 +15,7 @@ describe('AuthenticateUser', () => {
     fakeUsersRepository = new FakeUserRepository();
     fakeHashProvider = new FakeHashProvider();
 
-    createUser = new CreateUserService(
-      fakeUsersRepository,
-      fakeHashProvider,
-    );
+    createUser = new CreateUserService(fakeUsersRepository, fakeHashProvider);
     authenticateUser = new AuthenticateUserService(
       fakeUsersRepository,
       fakeHashProvider,
