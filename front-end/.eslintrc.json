@@ -66,6 +66,7 @@
         "react/static-property-placement": "off",
         "no-param-reassign": "off",
         "no-console": "off"
+
     },
     "settings": {
         "import/resolver": {
