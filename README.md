@@ -40,30 +40,26 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ---
 #### Front-end:
 
-#### Área Inicial:
+- [X] Estrutura das Páginas de Login e Cadastro;
+    - [ ] Validar cadastro;
+    - [ ] Exibir erros no input;
+    - [ ] Criar tooltip de erros;
+    - [ ] Validação de login;
 
-- [X] Criação do banner;
-     - [ ] Integrar a área de busca com o back-end;
+- [ ] Autenticação;
+    - [ ] Habilar Cors na API;
+    - [ ] Login pelo contexto;
+    - [ ] Manter Usuário no storage;
 
-- [X] Criação da área "Tipos de Consultas";
+- [ ] Mensagens de toast;
+    - [ ] Estrutura de Toast;
+    - [ ] Criar hook de toast;
+    - [ ] Adicionar e remover toasts;
+    - [ ] Animar Toasts;
 
-- [X] Depoimentos;
-    - [ ] Colocar textos dos depoimentos;
-
-- [X] Área Clínicas;
-    - [ ] Criar telas do "saiba mais";
-
-- [ ] Ajustar a responsividade;
-
-- [ ] Rodapé;
-
-#### Área Inicial / Busca - Horários 
-
-- [ ] Criação da área de agendamento Online;
-
-- [ ] Criação da área de agendamento Presencial;
-
-- [X] Área de Login;
+- [ ] Rotas da Aplicação;
+    - [ ] Configurar Rotas;
+    - [ ] Autenticar Rotas;
 ---
 ### 🛠️ Tecnologias
 
@@ -80,8 +76,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ### Front-end:
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML);
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS);
-- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript);
-- [Bootstrap 4](https://getbootstrap.com/docs/4.1/getting-started/introduction/).
+- [Typescript](https://www.typescriptlang.org/docs/);
+- [ReactJS](https://pt-br.reactjs.org/docs/getting-started.html).
 ---
 ## 🚀 Rodando Clynic
 
@@ -90,7 +86,7 @@ Para instalar o Clynic, siga estas etapas:
 ```
 $ git clone
 $ yarn
-$ yarn dev (para o front-end)
+$ yarn start (para o front-end)
 $ yarn dev:server (para o back-end)
 ```
 <!-- 
