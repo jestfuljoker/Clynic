@@ -29,6 +29,7 @@
         "react/jsx-props-no-spreading": "off",
         "react-hooks/exhaustive-deps": "warn",
         "react/prop-types": "off",
+        "no-unused-expressions": "off",
         "react/jsx-one-expression-per-line": "off",
         "import/prefer-default-expor": "off",
         "@typescript-eslint/explicit-function-return-type": [
