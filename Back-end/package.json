@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@types/cors": "^2.8.10",
+    "aws-sdk": "^2.914.0",
     "bcryptjs": "^2.4.3",
     "celebrate": "^14.0.0",
     "class-transformer": "^0.4.0",
