@@ -61,8 +61,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 #### Front-end:
 
 - [X] Estrutura das Páginas de Login e Cadastro;
-    - [ ] Validar cadastro;
-    - [ ] Exibir erros no input;
+    - [X] Validar cadastro;
+    - [X] Exibir erros no input;
     - [ ] Criar tooltip de erros;
     - [ ] Validação de login;
 
