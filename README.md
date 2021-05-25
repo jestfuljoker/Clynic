@@ -1,6 +1,26 @@
 # Clynic 💉
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Chriszao/Clynic?style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/Chriszao/Clynic?style=for-the-badge) ![GitHub forks](https://img.shields.io/github/forks/Chriszao/Clynic?style=for-the-badge)
+<p align="center">
+  <img  alt="Clynic Logo" src="./front-end/src/assets/logo.svg"></img>
+</p>
+
+<h4 align="center"> 
+	🚧 Clynic 🚀 Em construção... 🚧
+</h4>
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Chriszao/Clynic?color=%2304D361" />
+
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/progress-60%25-yellow.svg" alt="Progress">
+  </a>
+	
+  <a href="https://github.com/Chriszao/Clynic/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Chriszao/Clynic">
+  </a>
+
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+</p>
 
 <!-- <img src="exemplo-image.png" alt="exemplo imagem">
 
@@ -25,11 +45,11 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
      - [ ] Notificação quando houver um novo agendamento;
      - [ ] Visualização de notificações lidas e não lidas.
 
-- [ ] Agendamento de serviços
-     - [ ] Listar todos prestadores de serviços cadastrados;
-     - [ ] Listar os dias de um mês com pelo menos um horário disponível de um prestador;
-     - [ ] Listar horários disponíveis em um dia especifico de um prestador;
-     - [ ] Realizar um novo agendamento com um prestador.
+- [x] Agendamento de serviços
+     - [x] Listar todos prestadores de serviços cadastrados;
+     - [x] Listar os dias de um mês com pelo menos um horário disponível de um prestador;
+     - [x] Listar horários disponíveis em um dia especifico de um prestador;
+     - [x] Realizar um novo agendamento com um prestador.
 
 - [x] Login e autenticação de usuário;
   - [x] Criar token de autenticação de sessão;
@@ -47,7 +67,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
     - [ ] Validação de login;
 
 - [ ] Autenticação;
-    - [ ] Habilar Cors na API;
+    - [ ] Habilitar Cors na API;
     - [ ] Login pelo contexto;
     - [ ] Manter Usuário no storage;
 
