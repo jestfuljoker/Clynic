@@ -52,3 +52,5 @@ package-lock.json
 crowdin-cli.jar
 
 REQUSO.md
+.env
+ormconfig.json
