@@ -1,5 +1,9 @@
 # Clynic 💉
 
+<p align="center">
+  <img  alt="Clynic Logo" src="./front-end/src/assets/logo.svg"></img>
+</p>
+
 <h4 align="center"> 
 	🚧 Clynic 🚀 Em construção... 🚧
 </h4>
