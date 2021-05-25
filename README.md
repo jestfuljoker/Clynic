@@ -63,8 +63,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [X] Estrutura das Páginas de Login e Cadastro;
     - [X] Validar cadastro;
     - [X] Exibir erros no input;
-    - [ ] Criar tooltip de erros;
-    - [ ] Validação de login;
+    - [X] Criar tooltip de erros;
+    - [X] Validação de login;
 
 - [ ] Autenticação;
     - [ ] Habilitar Cors na API;
