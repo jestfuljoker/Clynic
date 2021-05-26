@@ -12,7 +12,7 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Chriszao/Clynic?color=%2304D361" />
 
   <a href="http://makeapullrequest.com">
-    <img src="https://img.shields.io/badge/progress-60%25-yellow.svg" alt="Progress">
+    <img src="https://img.shields.io/badge/progress-80%25-brightgreen.svg" alt="Progress">
   </a>
 	
   <a href="https://github.com/Chriszao/Clynic/commits/master">
@@ -40,10 +40,10 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Atualização do perfil
      - [x] Alterar nome, email, senha;
 
-- [ ] Painel do prestador
-     - [ ] Listar agendamentos de um dia específico;
-     - [ ] Notificação quando houver um novo agendamento;
-     - [ ] Visualização de notificações lidas e não lidas.
+- [x] Painel do prestador
+     - [x] Listar agendamentos de um dia específico;
+     - [x] Notificação quando houver um novo agendamento;
+     - [x] Visualização de notificações lidas e não lidas.
 
 - [x] Agendamento de serviços
      - [x] Listar todos prestadores de serviços cadastrados;
