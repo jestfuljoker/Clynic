@@ -9,12 +9,12 @@ import AppProvider from './hooks/index';
 import GlobalStyle from './styles/global';
 
 const App: React.FC = () => (
-    <>
-        <AppProvider>
-            <SignIn />
-        </AppProvider>
-        <GlobalStyle />
-    </>
+  <>
+    <AppProvider>
+      <SignIn />
+    </AppProvider>
+    <GlobalStyle />
+  </>
 );
 
 export default App;
