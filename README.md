@@ -71,10 +71,10 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
     - [X] Login pelo contexto;
     - [X] Manter Usuário no storage;
 
-- [ ] Mensagens de toast;
-    - [ ] Estrutura de Toast;
-    - [ ] Criar hook de toast;
-    - [ ] Adicionar e remover toasts;
+- [X] Mensagens de toast;
+    - [X] Estrutura de Toast;
+    - [X] Criar hook de toast;
+    - [X] Adicionar e remover toasts;
     - [ ] Animar Toasts;
 
 - [ ] Rotas da Aplicação;
