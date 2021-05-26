@@ -61,7 +61,11 @@ const SignIn: React.FC = () => {
           formRef.current?.setErrors(errors);
         }
 
-        addToast();
+        addToast({
+          type: 'error',
+          title: 'Erro na autenticação',
+          description: 'Ocorreu um erro ao fazer login, cheque as credenciais.',
+        });
       }
     },
     [signIn, addToast],
@@ -82,7 +86,7 @@ const SignIn: React.FC = () => {
           />
           <Button type="submit">Entrar</Button>
 
-          <a href="/forgot-password">Esqueci minha senha</a>
+          <a href="forgot">Esqueci minha senha</a>
         </Form>
 
         <a href="dada">
@@ -95,5 +99,4 @@ const SignIn: React.FC = () => {
     </Container>
   );
 };
-
 export default SignIn;
