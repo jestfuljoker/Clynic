@@ -66,10 +66,10 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
     - [X] Criar tooltip de erros;
     - [X] Validação de login;
 
-- [ ] Autenticação;
-    - [ ] Habilitar Cors na API;
-    - [ ] Login pelo contexto;
-    - [ ] Manter Usuário no storage;
+- [X] Autenticação;
+    - [X] Habilitar Cors na API;
+    - [X] Login pelo contexto;
+    - [X] Manter Usuário no storage;
 
 - [ ] Mensagens de toast;
     - [ ] Estrutura de Toast;
