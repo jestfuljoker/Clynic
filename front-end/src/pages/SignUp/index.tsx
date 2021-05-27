@@ -17,6 +17,7 @@ import logoImg from '../../assets/logo.svg';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import ToggleSwitch from '../../components/ToggleSwitch';
 
 import { Container, Content, AnimationContainer, Background } from './styles';
 
@@ -24,6 +25,7 @@ interface SignUpFormData {
   name: string;
   email: string;
   password: string;
+  provider: boolean;
 }
 const SignUp: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
@@ -92,6 +94,9 @@ const SignUp: React.FC = () => {
               type="password"
               placeholder="Senha"
             />
+
+            <ToggleSwitch name="provider" label="Sou médico" />
+
             <Button type="submit">Cadastrar</Button>
           </Form>
 

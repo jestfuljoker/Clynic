@@ -13,6 +13,7 @@ import ResetPassword from '../pages/ResetPassword';
 import Dashboard from '../pages/Dashboard';
 import Providers from '../pages/Providers';
 import ProvidersAvailability from '../pages/ProvidersAvailability';
+import Profile from '../pages/Profile';
 
 const Routes: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const Routes: React.FC = () => {
         component={ProvidersAvailability}
         isPrivate
       />
+      <Route path="/profile" component={Profile} isPrivate />
     </Switch>
   );
 };
