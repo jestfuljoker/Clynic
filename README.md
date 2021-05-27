@@ -62,24 +62,35 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [X] Estrutura das Páginas de Login e Cadastro;
     - [X] Validar cadastro;
-    - [X] Exibir erros no input;
-    - [X] Criar tooltip de erros;
     - [X] Validação de login;
 
 - [X] Autenticação;
-    - [X] Habilitar Cors na API;
     - [X] Login pelo contexto;
+    - [X] Exibir erros no input
     - [X] Manter Usuário no storage;
 
 - [X] Mensagens de toast;
     - [X] Estrutura de Toast;
-    - [X] Criar hook de toast;
     - [X] Adicionar e remover toasts;
-    - [ ] Animar Toasts;
 
 - [X] Rotas da Aplicação;
     - [X] Configurar Rotas;
     - [X] Autenticar Rotas;
+
+- [] Dashboard;
+    - [] Criar Header;
+    - [] Próximo agendamento;
+    - [] Listagem de agendamentos
+    - [] Calendário e estilização
+    - [] Disponibilidade do mês
+    - [] Agendamentos da API
+    - [] Exibindo agendamentos em tela
+    - [] Finalizando lsitagem de agendamentos
+
+- [] Perfil do usuário;
+    - [] Página de perfil;
+    - [] Trocar de avatar;
+    - [] Alteração de dados;
 ---
 ### 🛠️ Tecnologias
 
