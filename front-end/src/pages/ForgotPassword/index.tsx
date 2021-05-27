@@ -58,7 +58,7 @@ const ForgotPassword: React.FC = () => {
         title: 'E-mail de recuperação enviado',
         description: 'Enviamos um email para confirmar a recuperação de senha. Cheque a sua caixa de entrada.'
         */
-        addToast();
+        // addToast();
 
         // history.push('/dashboard) adicionar depois
       } catch (err) {
@@ -74,7 +74,7 @@ const ForgotPassword: React.FC = () => {
         title: 'Error na recuperação de senha',
         description: 'Ocorreu um erro ao tentar realizar a recuperação de senha. Tente novamente.'
         */
-        addToast();
+        // addToast();
       } finally {
         setLoading(false);
       }
