@@ -77,20 +77,20 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
     - [X] Configurar Rotas;
     - [X] Autenticar Rotas;
 
-- [] Dashboard;
-    - [] Criar Header;
-    - [] Próximo agendamento;
-    - [] Listagem de agendamentos
-    - [] Calendário e estilização
-    - [] Disponibilidade do mês
-    - [] Agendamentos da API
-    - [] Exibindo agendamentos em tela
-    - [] Finalizando lsitagem de agendamentos
+- [ ] Dashboard;
+    - [ ] Criar Header;
+    - [ ] Próximo agendamento;
+    - [ ] Listagem de agendamentos
+    - [ ] Calendário e estilização
+    - [ ] Disponibilidade do mês
+    - [ ] Agendamentos da API
+    - [ ] Exibindo agendamentos em tela
+    - [ ] Finalizando lsitagem de agendamentos
 
-- [] Perfil do usuário;
-    - [] Página de perfil;
-    - [] Trocar de avatar;
-    - [] Alteração de dados;
+- [ ] Perfil do usuário;
+    - [ ] Página de perfil;
+    - [ ] Trocar de avatar;
+    - [ ] Alteração de dados;
 ---
 ### 🛠️ Tecnologias
 
