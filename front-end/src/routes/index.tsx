@@ -10,6 +10,8 @@ import SignUp from '../pages/SignUp';
 import ForgotPassword from '../pages/ForgotPassword';
 
 import Dashboard from '../pages/Dashboard';
+import Providers from '../pages/Providers';
+import ProvidersAvailability from '../pages/ProvidersAvailability';
 
 const Routes: React.FC = () => {
   return (
@@ -19,6 +21,12 @@ const Routes: React.FC = () => {
       <Route path="/forgot-password" component={ForgotPassword} />
 
       <Route path="/dashboard" component={Dashboard} isPrivate />
+      <Route path="/providers" exact component={Providers} isPrivate />
+      <Route
+        path="/providers/:id/availability"
+        component={ProvidersAvailability}
+        isPrivate
+      />
     </Switch>
   );
 };
