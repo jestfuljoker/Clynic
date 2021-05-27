@@ -77,9 +77,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
     - [X] Adicionar e remover toasts;
     - [ ] Animar Toasts;
 
-- [ ] Rotas da Aplicação;
-    - [ ] Configurar Rotas;
-    - [ ] Autenticar Rotas;
+- [X] Rotas da Aplicação;
+    - [X] Configurar Rotas;
+    - [X] Autenticar Rotas;
 ---
 ### 🛠️ Tecnologias
 
