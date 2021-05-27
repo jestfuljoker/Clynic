@@ -8,6 +8,8 @@ import { FormHandles } from '@unform/core';
 
 import * as Yup from 'yup';
 
+import { Link } from 'react-router-dom';
+
 import { useToast } from '../../hooks/toast';
 
 import getValidationErrors from '../../utils/getValidationErrors';
@@ -18,7 +20,8 @@ import Input from '../../components/Input';
 
 import Button from '../../components/Button';
 
-import { Container, Content, Background } from './styles';
+import { Container, Content, AnimationContainer, Background } from './styles';
+
 import api from '../../services/api';
 
 interface ForgotPasswordFormData {
@@ -48,33 +51,30 @@ const ForgotPassword: React.FC = () => {
           abortEarly: false,
         });
 
-        // Recuperação de senha
-
+        // recuperação de senha
         await api.post('/password/forgot', { email: data.email });
 
-        // adicionar parâmetros do toast:
-        /*
-        type: 'success',
-        title: 'E-mail de recuperação enviado',
-        description: 'Enviamos um email para confirmar a recuperação de senha. Cheque a sua caixa de entrada.'
-        */
-        // addToast();
-
-        // history.push('/dashboard) adicionar depois
+        addToast({
+          type: 'success',
+          title: 'E-mail de recuperação enviado',
+          description:
+            'Enviamos um e-mail para confirmar a recuperação de senha. Cheque a sua caixa de entrada.',
+        });
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErrors(err);
 
           formRef.current?.setErrors(errors);
+
+          return;
         }
 
-        // adicionar parâmetros do toast:
-        /*
-        type: 'error',
-        title: 'Error na recuperação de senha',
-        description: 'Ocorreu um erro ao tentar realizar a recuperação de senha. Tente novamente.'
-        */
-        // addToast();
+        addToast({
+          type: 'error',
+          title: 'Erro na recuperação de senha',
+          description:
+            'Ocorreu um erro ao tentar realizar a recuperação de senha, tente novamente.',
+        });
       } finally {
         setLoading(false);
       }
@@ -84,31 +84,26 @@ const ForgotPassword: React.FC = () => {
   return (
     <Container>
       <Content>
-        {/* Adicionar <AnimationContainer> */}
-        <img src={logoImg} alt="Clynic" />
+        <AnimationContainer>
+          <img src={logoImg} alt="Clynic" />
 
-        <Form ref={formRef} onSubmit={handleSubmit}>
-          <h1>Recuperar senha</h1>
+          <Form ref={formRef} onSubmit={handleSubmit}>
+            <h1>Recuperar senha</h1>
+            <Input name="email" icon={FiMail} placeholder="E-mail" />
+            <Button loading={loading} type="submit">
+              Recuperar
+            </Button>
+          </Form>
 
-          <Input name="email" icon={FiMail} placeholder="E-mail" />
-
-          <Button loading={loading} type="submit">
-            Recuperar
-          </Button>
-        </Form>
-
-        {/* Substituir tag a por Link. Configurar rota forgot password 02:20 aula criação página de recuperação nivel 5 */}
-        <a href="/signin">
-          <FiLogIn />
-          Voltar ao login
-        </a>
-
-        {/* Adicionar <AnimationContainer> */}
+          <Link to="./signin">
+            <FiLogIn />
+            Voltar ao Login
+          </Link>
+        </AnimationContainer>
       </Content>
 
       <Background />
     </Container>
   );
 };
-
 export default ForgotPassword;
