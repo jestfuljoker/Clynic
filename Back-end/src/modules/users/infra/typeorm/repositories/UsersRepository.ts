@@ -35,21 +35,22 @@ class UsersRepository implements IUsersRepository {
       users = await this.ormRepository.find({
         where: {
           id: Not(except_user_id),
+          provider: true,
         },
       });
     } else {
-      users = await this.ormRepository.find();
+      users = await this.ormRepository.find({ where: { provider: true } });
     }
 
     return users;
   }
 
   public async create(userData: ICreateUserDTO): Promise<User> {
-    const appointment = this.ormRepository.create(userData);
+    const user = this.ormRepository.create(userData);
 
-    await this.ormRepository.save(appointment);
+    await this.ormRepository.save(user);
 
-    return appointment;
+    return user;
   }
 
   public async save(user: User): Promise<User> {
