@@ -77,10 +77,10 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
     - [X] Configurar Rotas;
     - [X] Autenticar Rotas;
 
-- [ ] Dashboard;
-    - [ ] Criar Header;
-    - [ ] Próximo agendamento;
-    - [ ] Listagem de agendamentos
+- [X] Dashboard;
+    - [X] Criar Header;
+    - [X] Próximo agendamento;
+    - [X] Listagem de agendamentos
     - [ ] Calendário e estilização
     - [ ] Disponibilidade do mês
     - [ ] Agendamentos da API
