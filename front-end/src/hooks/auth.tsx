@@ -4,22 +4,28 @@ import React, { createContext, useCallback, useState, useContext } from 'react';
 import api from '../services/api';
 
 interface User {
+  email: string;
   id: string;
   name: string;
   avatar_url: string;
+  provider: boolean;
 }
+
 interface SignInCredentials {
   email: string;
   password: string;
 }
+
 interface AuthState {
   token: string;
   user: User;
 }
+
 interface AuthContextData {
   user: User;
   signIn(credentials: SignInCredentials): Promise<void>;
   signOut(): void;
+  updateUser(user: User): void;
 }
 
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
@@ -30,6 +36,7 @@ const AuthProvider: React.FC = ({ children }) => {
     const user = localStorage.getItem('@Clynic:user');
 
     if (token && user) {
+      api.defaults.headers.authorization = `Bearer ${token}`;
       return { token, user: JSON.parse(user) };
     }
 
@@ -37,7 +44,10 @@ const AuthProvider: React.FC = ({ children }) => {
   });
 
   const signIn = useCallback(async ({ email, password }) => {
-    const response = await api.post('sessions', {
+    const response = await api.post<{
+      token: string;
+      user: User;
+    }>('sessions', {
       email,
       password,
     });
@@ -46,6 +56,8 @@ const AuthProvider: React.FC = ({ children }) => {
 
     localStorage.setItem('@Clynic:token', token);
     localStorage.setItem('@Clynic:user', JSON.stringify(user));
+
+    api.defaults.headers.authorization = `Bearer ${token}`;
 
     setData({ token, user });
   }, []);
@@ -57,8 +69,19 @@ const AuthProvider: React.FC = ({ children }) => {
     setData({} as AuthState);
   }, []);
 
+  const updateUser = useCallback(
+    (user: User) => {
+      setData({ token: data.token, user });
+
+      localStorage.setItem('@Clynic:user', JSON.stringify(user));
+    },
+    [data],
+  );
+
   return (
-    <AuthContext.Provider value={{ user: data.user, signIn, signOut }}>
+    <AuthContext.Provider
+      value={{ user: data.user, signIn, signOut, updateUser }}
+    >
       {children}
     </AuthContext.Provider>
   );
