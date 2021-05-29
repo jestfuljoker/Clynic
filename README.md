@@ -12,7 +12,7 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Chriszao/Clynic?color=%2304D361" />
 
   <a href="http://makeapullrequest.com">
-    <img src="https://img.shields.io/badge/progress-80%25-brightgreen.svg" alt="Progress">
+    <img src="https://img.shields.io/badge/progress-100%25-brightgreen.svg" alt="Progress">
   </a>
 	
   <a href="https://github.com/Chriszao/Clynic/commits/master">
@@ -22,13 +22,19 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
-<!-- <img src="exemplo-image.png" alt="exemplo imagem">
+<p align="center">
+ <a href="#features-desenvolvidas">Features desenvolvidas</a> •
+ <a href="#tecnologias">Tecnologias</a> •
+ <a href="#rodando-clynic">Rodando clynic</a> •
+ <a href="#contribuindo-para-clynic">Contribuindo para o Clynic</a> •
+ <a href="#colaboradores">Colaboradores</a> •
+</p>
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler. -->
+<img src="/clynic-test.gif" alt="exemplo sistema clynic">
 
-### Ajustes e melhorias
+> Sistema de agendamentos de consultas. A aplicação visa gerar contato direto entre pacientes e médicos.
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+### Features desenvolvidas
 
 #### Back-end:
 - [x] Recuperação de senha
@@ -115,19 +121,8 @@ $ yarn
 $ yarn start (para o front-end)
 $ yarn dev:server (para o back-end)
 ```
-<!-- 
-## ☕ Usando <nome_do_projeto>
-
-Para usar <nome_do_projeto>, siga estas etapas:
-
-```
-<exemplo_de_uso>
-``` -->
-<!-- 
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus! -->
 
 ## 📫 Contribuindo para Clynic
-<!---Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado--->
 Para contribuir com <strong>Clynic</strong>, siga estas etapas:
 
 1. Bifurque este repositório.
