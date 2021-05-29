@@ -47,7 +47,7 @@ const AuthProvider: React.FC = ({ children }) => {
     const response = await api.post<{
       token: string;
       user: User;
-    }>('sessions', {
+    }>('/sessions', {
       email,
       password,
     });

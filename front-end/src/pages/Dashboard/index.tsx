@@ -1,12 +1,11 @@
 import React, { useState, useCallback, useEffect, useMemo } from 'react';
 import { FiPower, FiClock } from 'react-icons/fi';
-import { DayModifiers } from 'react-day-picker';
+import DayPicker, { DayModifiers } from 'react-day-picker';
 // eslint-disable-next-line import/no-duplicates
-import { format, isToday, parseISO, isAfter } from 'date-fns';
+import { format, isToday, parseISO, isAfter, isTomorrow } from 'date-fns';
 // eslint-disable-next-line import/no-duplicates
 import { ptBR } from 'date-fns/locale';
 import { Link } from 'react-router-dom';
-import Calendar from '../../components/Calendar';
 import 'react-day-picker/lib/style.css';
 
 import {
@@ -19,6 +18,7 @@ import {
   NextAppointment,
   Section,
   Appointment,
+  Calendar,
 } from './styles';
 
 import logoImg from '../../assets/logo.svg';
@@ -84,12 +84,18 @@ const Dashboard: React.FC = () => {
         },
       })
       .then(response => {
-        const appointmentsFormatted = response.data.map(appointment => {
-          return {
-            ...appointment,
-            hourFormatted: format(parseISO(appointment.date), 'HH:mm'),
-          };
-        });
+        const appointmentsFormatted = response.data
+          .map(appointment => {
+            return {
+              ...appointment,
+              hourFormatted: format(parseISO(appointment.date), 'HH:mm'),
+            };
+          })
+          .sort((a, b) => {
+            if (a.hourFormatted > b.hourFormatted) return 1;
+            if (a.hourFormatted < b.hourFormatted) return -1;
+            return 0;
+          });
         setAppointments(appointmentsFormatted);
       });
   }, [selectedDate]);
@@ -161,17 +167,18 @@ const Dashboard: React.FC = () => {
           <h1>Horários agendados</h1>
           <p>
             {isToday(selectedDate) && <span>Hoje</span>}
+            {isTomorrow(selectedDate) && <span>Amanhã</span>}
             <span>{selectedDateAsText}</span>
             <span>{selectedWeekDay}</span>
           </p>
 
           {isToday(selectedDate) && nextAppointment && (
             <NextAppointment>
-              <strong>Agendamento a seguir</strong>
+              <strong>Próximo atendimento</strong>
 
               <div>
                 <img
-                  src={nextAppointment.user.avatar_url}
+                  src={nextAppointment.user.avatar_url || avatarImg}
                   alt={nextAppointment.user.name}
                 />
 
@@ -188,7 +195,7 @@ const Dashboard: React.FC = () => {
             <strong>Manhã</strong>
 
             {morningAppointments.length === 0 && (
-              <p>Nenhum agendamento neste período</p>
+              <p>Nenhum agendamento neste período.</p>
             )}
 
             {morningAppointments.map(appointment => (
@@ -200,7 +207,7 @@ const Dashboard: React.FC = () => {
 
                 <div>
                   <img
-                    src={appointment.user.avatar_url}
+                    src={appointment.user.avatar_url || avatarImg}
                     alt={appointment.user.name}
                   />
 
@@ -213,7 +220,7 @@ const Dashboard: React.FC = () => {
           <Section>
             <strong>Tarde</strong>
             {afternoonAppointments.length === 0 && (
-              <p>Nenhum agendamento neste período</p>
+              <p>Nenhum agendamento neste período.</p>
             )}
 
             {afternoonAppointments.map(appointment => (
@@ -225,7 +232,7 @@ const Dashboard: React.FC = () => {
 
                 <div>
                   <img
-                    src={appointment.user.avatar_url}
+                    src={appointment.user.avatar_url || avatarImg}
                     alt={appointment.user.name}
                   />
 
@@ -235,15 +242,31 @@ const Dashboard: React.FC = () => {
             ))}
           </Section>
         </Schedule>
-
-        <aside>
-          <Calendar
-            disabledDays={disabledDays}
-            selectedDate={selectedDate}
-            handleDateChange={handleDateChange}
-            handleMonthChange={handleMonthChange}
+        <Calendar>
+          <DayPicker
+            weekdaysShort={['D', 'S', 'T', 'Q', 'Q', 'S', 'S']}
+            fromMonth={new Date()}
+            disabledDays={[{ daysOfWeek: [0, 6] }, ...disabledDays]}
+            modifiers={{ available: { daysOfWeek: [1, 2, 3, 4, 5] } }}
+            onDayClick={handleDateChange}
+            onMonthChange={handleMonthChange}
+            selectedDays={selectedDate}
+            months={[
+              'Janeiro',
+              'Fevereiro',
+              'Março',
+              'Abril',
+              'Maio',
+              'Junho',
+              'Julho',
+              'Agosto',
+              'Setembro',
+              'Outubro',
+              'Novembro',
+              'Dezembro',
+            ]}
           />
-        </aside>
+        </Calendar>
       </Content>
     </Container>
   );
